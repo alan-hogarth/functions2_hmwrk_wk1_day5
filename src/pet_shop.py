@@ -50,9 +50,17 @@ def find_pet_by_name(pet_list, here_boy):
 #    return None
 
 
-def add_pet_to_stock(pet_list, new_pet):
-    add_pet = pet_list.append(new_pet)
-    return add_pet
+# def add_pet_to_stock(pet_list, new_pet):
+#     pet_list.update(new_pet)
+#     return pet_list
+
+def get_customer_cash(cust_list):
+    return cust_list["cash"]
+
+def remove_customer_cash(cust_list, transaction):
+    cust_list["cash"] -= transaction
+
+
     
             
 
