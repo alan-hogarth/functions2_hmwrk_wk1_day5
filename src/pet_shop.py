@@ -26,6 +26,12 @@ def get_pets_sold(find_pets):
 def increase_pets_sold(dictionary, add_pets):
     dictionary["admin"]["pets_sold"] = add_pets
 
+def get_stock_count(count):
+    stock_count = len(count["pets"])
+    return stock_count
+  
+
+
 
 # def get_pets_by_breed(shop_dict, dog_breed):
 #     pets_by_breed = []
