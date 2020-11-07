@@ -23,6 +23,9 @@ def add_or_remove_cash(dictionary, add_cash):
 def get_pets_sold(find_pets):
     return find_pets["admin"]["pets_sold"]
 
+def increase_pets_sold(dictionary, add_pets):
+    dictionary["admin"]["pets_sold"] = add_pets
+
 
 # def get_pets_by_breed(shop_dict, dog_breed):
 #     pets_by_breed = []
