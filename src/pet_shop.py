@@ -57,10 +57,13 @@ def find_pet_by_name(pet_list, here_boy):
 def get_customer_cash(cust_list):
     return cust_list["cash"]
 
-def remove_customer_cash(cust_list, transaction):
-    cust_list["cash"] -= transaction
+def remove_customer_cash(cust_list, remove_cash):
+    cust_list["cash"] -= remove_cash
 
-
+# def get_customer_pet_count(cust_list, value):
+#     for pet_count in cust_list:
+#         if pet_count["pets"] == value:
+#             return pet_count
     
             
 
