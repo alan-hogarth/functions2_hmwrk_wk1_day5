@@ -17,9 +17,11 @@ def get_total_cash(sum):
 # 
 def add_or_remove_cash(dictionary, add_cash):
     dictionary["admin"]["total_cash"] += add_cash
+
 #    adds and removes
 
-
+def get_pets_sold(find_pets):
+    return find_pets["admin"]["pets_sold"]
 
 
 # def get_pets_by_breed(shop_dict, dog_breed):
