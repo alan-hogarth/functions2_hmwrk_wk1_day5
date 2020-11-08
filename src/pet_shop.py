@@ -59,14 +59,11 @@ def get_customer_cash(cust_list):
 def remove_customer_cash(cust_list, remove_cash):
     cust_list["cash"] -= remove_cash
 
-# def get_customer_pet_count(cust_list, value):
-#     count = []
-#     for pet_count in cust_list:
-#         if pet_count["name"] == value:
-#             count.append(pet_count)
-#     return count
-            
-# def add_pet_to_customer(cust_list, value):
+def get_customer_pet_count(cust_list):
+    cust_list["pets"] = 0
+    return cust_list["pets"]
+           
+def add_pet_to_customer(cust_list, value):
 
     
 
