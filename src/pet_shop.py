@@ -43,17 +43,16 @@ def find_pet_by_name(pet_list, here_boy):
     return None
     
 
-# def remove_pet_by_name(pet_list, remove):
-#    for pet_name in pet_list["pets"]:
-#         if pet_name["name"] == remove:
-#             del pet_name
-#    return None
+# def remove_pet_by_name(pet_list, subtract):
+#     find_pet = find_pet_by_name(pet_list, subtract)
+#     for pet_name in pet_list["pets"]:
+#         if pet_name["name"] == find_pet:
+#             pet_name.pop(find_pet)
 
+def add_pet_to_stock(pet_list, new_pet):
+    pet_list["pets"].append(new_pet)
 
-# def add_pet_to_stock(pet_list, new_pet):
-#     pet_list.update(new_pet)
-#     return pet_list
-
+    
 def get_customer_cash(cust_list):
     return cust_list["cash"]
 
@@ -61,12 +60,13 @@ def remove_customer_cash(cust_list, remove_cash):
     cust_list["cash"] -= remove_cash
 
 # def get_customer_pet_count(cust_list, value):
+#     count = []
 #     for pet_count in cust_list:
-#         if pet_count["pets"] == value:
-#             return pet_count
-    
+#         if pet_count["name"] == value:
+#             count.append(pet_count)
+#     return count
             
-
+# def add_pet_to_customer(cust_list, value):
 
     
 
