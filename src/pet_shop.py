@@ -1,14 +1,7 @@
 # WRITE YOUR FUNCTIONS HERE
 
-# def get_pet_shop_name(title):
-#     name_result = None
-#     for shop_name in title.values():   
-#         name_result = shop_name
-    
-#     return name_result
-
-def get_pet_shop_name(input_dictionary):
-    result = input_dictionary["name"]
+def get_pet_shop_name(dictionary):
+    result = dictionary["name"]
     return(result)
 
 def get_total_cash(sum):
@@ -29,25 +22,25 @@ def get_stock_count(count):
     stock_count = len(count["pets"])
     return stock_count
   
-def get_pets_by_breed(pet_list, find_pets):
+def get_pets_by_breed(pet_list, find_breed):
     breed = []
     for cat in pet_list["pets"]:
-        if cat["breed"] == find_pets:
+        if cat["breed"] == find_breed:
             breed.append(cat)
     return breed 
 
-def find_pet_by_name(pet_list, here_boy):
-    for pet_name in pet_list["pets"]:
-        if pet_name["name"] == here_boy:
-            return pet_name
+def find_pet_by_name(pet_list, pet_name):
+    for pet in pet_list["pets"]:
+        if pet["name"] == pet_name:
+            return pet
     return None
     
 
-# def remove_pet_by_name(pet_list, subtract):
-#     find_pet = find_pet_by_name(pet_list, subtract)
-#     for pet_name in pet_list["pets"]:
-#         if pet_name["name"] == find_pet:
-#             pet_name.pop(find_pet)
+def remove_pet_by_name(pet_list, pet_name):
+    for pet in pet_list["pets"]:
+        if pet["name"] == pet_name:
+            pet_list["pets"].remove(pet)
+#    
 
 def add_pet_to_stock(pet_list, new_pet):
     pet_list["pets"].append(new_pet)
@@ -63,7 +56,11 @@ def get_customer_pet_count(cust_list):
     cust_list["pets"] = 0
     return cust_list["pets"]
            
-def add_pet_to_customer(cust_list, value):
+# def add_pet_to_customer(cust_list, new_pet):
+#     for customer in cust_list:
+#         customer["pets"].append(new_pet)
+    
+
 
     
 
