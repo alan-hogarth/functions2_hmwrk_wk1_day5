@@ -35,7 +35,6 @@ def find_pet_by_name(pet_list, pet_name):
             return pet
     return None
     
-
 def remove_pet_by_name(pet_list, pet_name):
     for pet in pet_list["pets"]:
         if pet["name"] == pet_name:
@@ -57,8 +56,9 @@ def get_customer_pet_count(cust_list):
     return cust_list["pets"]
            
 # def add_pet_to_customer(cust_list, new_pet):
-#     for customer in cust_list:
-#         customer["pets"].append(new_pet)
+#     add_pet = get_customer_pet_count(new_pet)
+#     cust_list["pets"].append(add_pet)
+       
     
 
 
